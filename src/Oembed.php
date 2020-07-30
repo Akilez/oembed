@@ -57,7 +57,7 @@ class Oembed {
      */
     public function cache($url, array $options = null)
     {
-        $lifetime = array_get($options, 'lifetime', 60);
+        $lifetime = Arr::get($options, 'lifetime', 60);
 
         array_forget($options, 'lifetime');
 
